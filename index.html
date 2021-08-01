@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://kit.fontawesome.com/25f42a4366.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stylehomepage.css">
+
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+          
+        </label>
+
+        <label class="logo" >Calci</label>
+      
+        <ul>
+
+            <li> <a class="active" href="homepage.html">Home</a></li>
+            <li> <a href="index.html">Calculator</a></li>
+            <li> <a href="help.html">Help/Features</a></li>
+            <li> <a href="#">Contact</a></li>
+           </ul>
+       
+      </nav>
+       <video id="backgroundVideo" autoplay muted playsinline loop >
+        <source src="Office-3928.mp4" type="Video/mp4" >
+    </video>  
+</body>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/annyang/2.6.0/annyang.min.js"></script>
+<script>
+    if (annyang) {
+      // Let's define our first command. First the text we expect, and then the function it should call
+      var commands = {
+        'play video': function() {
+         document.getElementById("backgroundVideo").play();
+        },
+        'pause video': function() {
+         document.getElementById("backgroundVideo").pause();
+        },
+      };
+    
+      // Add our commands to annyang
+      annyang.addCommands(commands);
+    
+      // Start listening. You can call this here, or attach this call to an event, button, etc.
+      annyang.start();
+    }
+    </script> 
+</html>
