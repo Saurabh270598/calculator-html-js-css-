@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HElP PAGE</title>
+    <script src="https://kit.fontawesome.com/25f42a4366.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+    <style>
+         html {
+    font-family: "Montserrat", sans-serif;
+  }
+ 
+        * {
+    padding: 0;
+    margin: 0;
+    
+}
+        nav{
+   height: 80px;
+   width: 100%;
+   background: #0082e6;
+
+ }
+
+ label.logo{
+   font-size: 35px;
+   font-weight: bold;
+   color: white;
+   padding: 0 100px;
+   line-height: 80px;
+
+ }
+ nav ul{
+   float:right;
+   margin-right:40px;
+ }
+ nav li{
+   display:inline-block;
+   margin:0 8px;
+   line-height: 80px;
+ }
+ nav a{
+   color:white;
+   font-size:18px;
+   text-transform:uppercase;
+   border:1px solid transparent;
+   padding:7px 10px;
+   border-radius:3px;
+
+ }
+ a.active,a:hover{
+   border:1px solid white;
+   transition: .5s;
+ } 
+ .checkbtn{
+    color:white;
+    font-size: 30px;
+   float:right;
+    line-height:80px;
+    margin-right:40px;
+   cursor:pointer; 
+   display: none;
+    
+    
+  } 
+   #check{
+    display:none;
+  }
+  @media (max-width:952px){
+    label.logo{
+      font-size: 30px;
+      padding-left:50px;
+    }
+    nav ul li a{
+      font-size:16px;
+    }
+  }
+ 
+  @media (max-width:858px){
+    .checkbtn{
+      display:block;
+    }
+    ul{
+      position:fixed;
+      width:100%;
+      height:100vh;
+      background:#2c3e50;
+      top:80px;
+      left:-100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display:block;
+      margin:50px 0;
+      line-height:30px;
+    }
+    nav ul li a{
+      font-size:20px;
+
+
+    }
+    a:hover,a.active{
+      background: none;
+      color:#0082e6;
+    }
+    #check:checked ~ ul{
+
+     left:0;
+    }
+ 
+  }
+
+ 
+  p{
+     margin:0;
+     padding:0;
+     font-size:2vw;
+ }
+ body{
+     background-image: url(https://images.unsplash.com/photo-1587145820266-a5951ee6f620?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2FsY3VsYXRvcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80);
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
+   </style>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+          
+        </label>
+        <label class="logo" >Calci</label>
+        <ul>
+
+          <li> <a  href="index.html">Home</a></li>
+          <li> <a href="calculator.html">Calculator</a></li>
+            <li> <a class="active" href="help.html">Help/Features</a></li>
+            <li> <a href="#">Contact</a></li>
+           </ul>
+       
+  
+      </nav>
+      <br>
+      <br>
+      <div>
+    <h3> This is a basic Calculator, minor project developed by using front end technology.<br>
+
+        Please click on <b>caclulator</b> in homepage menu to use calculator..
+    </h3>
+       
+        <br>
+        
+      <p>  <h4>   
+       Some other features in this project are:</strong>
+        <br>
+            You can change play or pause the background video.Say<b> "pause video"</b> to video to be pause and <b>"play video"</b> for playing it again.<br>
+            You need to allow mic for voice recognition.
+           <br> You can change the theme too from navbar. 
+     <br><br><br>  
+        Thank you for your time to see my project.
+   </h4> </p>
+    </div>
+   
+  
+    
+</body>
+</html>
