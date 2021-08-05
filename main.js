@@ -28,7 +28,7 @@ numbersEl.forEach((number) => {
 
 operationEl.forEach((operation) => {
   operation.addEventListener("click", (e) => {
-    if (!dis2Num) return;
+    if (!dis2Num) return alert("Operation cannot be used first.");
     haveDot = false;
     const operationName = e.target.innerText;
     if (dis1Num && dis2Num && lastOperation) {
@@ -132,3 +132,4 @@ function clickOperation(key) {
 function clickEqual() {
   equalEl.click();
 }
+
