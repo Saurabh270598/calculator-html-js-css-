@@ -74,6 +74,10 @@
   }
  
   @media screen and (max-width:768px){
+        label.logo{
+      font-size: 30px;
+      padding-right:50px;
+    }
     .checkbtn{
       display:block;
     }
